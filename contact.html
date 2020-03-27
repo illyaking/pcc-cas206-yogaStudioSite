@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<!-- 
+Assignment Name: Path of Light Yoga Studio case study
+File Name: contact.html
+Date: 08/28/18
+Programmer: Illya King 
+-->
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Path of Light Yoga Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/yoga.css">
+     <script>
+     function validateForm() {
+     if (document.forms[0].myEmail.value == "") {
+        alert("Please enter an e-mail address.");
+        return false;
+     } // end if
+     return true;
+     } // end function validateForm
+     </script>
+ </head>
+ <body>
+ <div id="wrapper">
+    <header><h1>Path of Light Yoga Studio</h1></header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="store.html">Store</a></li>
+            </ul>
+        </nav>
+    <main>
+        <h2>Contact Path of Light Yoga Studio</h2>
+          <form method="post" action="http://webdevbasics.net/scripts/yoga.php" onsubmit="return validateForm();">
+              <label for="myName">Name:</label> <input type="text" name="name" id="myName">
+              <label for="myEmail">E-Mail:</label> <input type="email" name="myEmail" id="myEmail">
+              <label for="myComments">Comments</label> <textarea id="myComments" rows="2" cols="20"></textarea>
+              <input type="submit" id="mySubmit" value="Submit">
+          </form> 
+    </main>
+        <footer>
+                Copyright @ 2018 Path of Light Yoga Studio<br>
+                <a href="mailto:illya.king@pcc.edu">illya.king@pcc.edu</a>
+        </footer>
+</div>
+     <!-- End of weekly module --> 
+</body>
+</html>
